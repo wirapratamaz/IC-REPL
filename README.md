@@ -5,7 +5,13 @@ This repository contains a simple Rust project for an IC REPL (Internet Computer
 ## Step 1: Setting up Rust Environment and Dependencies
 
 Ensure Rust is installed, and Cargo (Rust's package manager and build system) is available. Then, set up a new Rust project:
-
+```bash
+[dependencies]
+ic-cdk = "0.3"
+ic-cdk-macros = "0.3"
+tokio = { version = "1", features = ["full"] }
+serde = { version = "1.0", features = ["derive"] }
+```
 ```bash
 cargo new ic_repl
 cd ic_repl
